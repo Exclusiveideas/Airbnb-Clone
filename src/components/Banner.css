@@ -32,6 +32,7 @@
       text-transform: inherit;
       margin-top: 20px;
       font-weight: 600;
+      z-index: 40px;
   }
   
   .banner__info > button:hover {
@@ -42,4 +43,22 @@
   
   .banner__info > h5 {
       margin-top: 10px;
+      
   }
+  
+  
+@media screen and (max-width: 768px) {
+  .banner__info {
+      width: 200px;
+      height: 60%;
+      padding-top: 10vh;
+  }
+  .banner__info > h1 {
+    font-size: 25px;
+  }
+  
+  .banner__info > button {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+}

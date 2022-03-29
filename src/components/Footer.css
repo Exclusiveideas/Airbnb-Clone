@@ -1,0 +1,27 @@
+.footer {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.footer > p {
+    padding: 2px;
+}
+
+.footer__privacy {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer__company {
+    text-decoration: none;
+    color: #f38282;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer__name {
+    font-size: 14px;
+}

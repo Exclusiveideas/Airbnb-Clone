@@ -1,0 +1,13 @@
+.home__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    z-index: 50;
+  }
+
+  @media screen and (max-width: 768px) {
+    .home__section {
+      padding: 5px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}

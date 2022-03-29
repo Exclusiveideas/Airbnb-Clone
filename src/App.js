@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Home from './Home'
-import Header from './Header'
-import Footer from './Footer'
-import SearchPage from './SearchPage'
+import Header from './components/Header';
+import Home from './components/Home';
+import SearchPage from './components/SearchPage';
+import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from './components/Sidebar';
 
 function App() {
-  return (
+  const [open, setOpen] = useState(false);
 
-    // BEM
+  return (
     <div className="app">
       <Router>
-        <Header />
+        <Header setOpen={setOpen} />
+        <Sidebar open={open} setOpen={setOpen} />
         
         <Routes>
           <Route path="/" element={<Home />} />

@@ -13,6 +13,7 @@
     object-fit: contain;
     height: 100px;
     margin-left: 20px;
+
   }
   
   .header__center {
@@ -36,7 +37,28 @@
   .header__right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 15vw;
     margin-right: 80px;
+  }
+
+  .header_mobilemenu {
+    display: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header__icon {
+      height: 70px;
+    }
+
+
+    .header__right {
+      display: none;
+    }
+
+    .header_mobilemenu {
+      display: flex;
+      padding: 3px;
+    }
   }
