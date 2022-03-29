@@ -5,6 +5,14 @@
     z-index: 50;
   }
 
+.header__right-text {
+  cursor: pointer;
+}
+
+.header__right-text:hover {
+  font-weight: bold;
+}
+
   @media screen and (max-width: 768px) {
     .home__section {
       padding: 5px;

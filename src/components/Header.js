@@ -24,10 +24,10 @@ function Header({ setOpen }) {
             </div>
 
             <div className='header__right'>
-                <p>Become a host</p>
-                <LanguageIcon />
-                <ExpandMoreIcon />
-                <Avatar />
+                <p className="header__right-text">Become a host</p>
+                <LanguageIcon  style={{ cursor: 'pointer' }} />
+                <ExpandMoreIcon  style={{ cursor: 'pointer' }}/>
+                <Avatar  style={{ cursor: 'pointer' }}/>
             </div>
             <div className="header_mobilemenu" onClick={() => setOpen(true)}>
                 <FiMenu color="#000" size="2rem" />
