@@ -7,9 +7,16 @@
     padding: 10px;
     justify-content: space-between;
     position: fixed; 
-    display: flex;
+    display: none;
     transition: 0.4s ease-in;
     margin-top: 10px;
     border-radius: 25px;
     border: 3px solid #f38282;
+
+} 
+
+@media screen and (max-width: 768px) {
+     .sidebar {
+         display: flex;
+     }
 }
